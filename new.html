@@ -1,0 +1,60 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="ss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        </div>
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form id="signup-form" onsubmit="saveUser(event)">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+
+                <label for="signUpEmail">Email</label>
+                <input type="signUpEmail" id="signUpEmail" name="signUpEmail" placeholder="Email" required>
+
+                <label for="signUpPassword">Password</label>
+                <div class="password-container">
+                    <input type="signUpPassword" id="signUpPassword" name="signUpPassword" placeholder="Password" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script>
+        function saveUser(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simulate saving data (replace with actual backend API call in real application)
+            let userData = {
+                fullname: document.getElementById('fullname').value,
+                esignUpEmail: document.getElementById('signUpEmail').value,
+                signUpPassword: document.getElementById('signUpPassword').value
+            };
+
+            // Normally you would send this data to a backend server to save in a database
+            console.log('Simulated saving user:', userData);
+
+            // Redirect to sign-in page after signup
+            window.location.href = 'ss.html'; // Redirect to sign-in page after signup
+        }
+
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordType = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', passwordType);
+        }
+    </script>
+</body>
+</html>

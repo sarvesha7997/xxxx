@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Search Box</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img.png" alt="Logo" class="logo-img">
+                <span class="logo-text"></span>
+            </div>
+            <!-- <div class="search-box">
+            <input type="text" placeholder="Search for your favorite groups in ATG">
+        </div> -->
+            <div class="search-box">
+                <input type="text" placeholder="Search for your favorite groups in ATG">
+                <i class="fas fa-search search-icon"></i>
+
+            </div>
+            <div class="account-link">
+                <a href="ss.html"><span class="create-account">Create account</span>. <span class="free-text">It's
+                        free!</span></a>
+            </div>
+        </nav>
+
+        <div class="image-container">
+            <img src="img1.png" alt="Computer Engineering Image">
+            <a href="https://example.com/computer-engineering" class="overlay-text">Computer Engineering
+
+               <p>142,765 Computer Engineers follow this</p>
+            </a>
+            
+        </div>
+
+        <div class="section">
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab active">All Posts (32)</button>
+                    <button class="tab">Article</button>
+                    <button class="tab">Event</button>
+                    <button class="tab">Education</button>
+                    <button class="tab">Job</button>
+                    <span class="tab-slider"></span>
+                </div>
+                <div class="button-group">
+                    <button class="write-post">
+                        Write a Post <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="join-group join-group-btn" id="toggle-group-btn">
+                        <i class="fas fa-users"></i> Join Group
+                    </button>
+                </div>
+            </div>
+            <!-- Main Content Section with Sidebar -->
+            <div class="content">
+                <!-- Posts Section -->
+                <div class="posts-section">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="img2.png" alt="Post Image">
+                            <div class="post-content">
+                                <div class="art">
+                                    <h3>Article</h3>
+                                    <div class="three-dots-menu">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <p>What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                            </div>
+                        </div>
+
+                        <div class="post-footer">
+                            <div class="author">
+                                <img src="img11.png" alt="Author"
+                                    style="width: 30px; height: 30px; border-radius: 50%;">
+                                <a href="#">Saritha Kamra</a>
+                            </div>
+                            <div class="views-share">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 1.4k views
+                                </div>
+                                <div class="share">
+                                    <i class="fas fa-share-alt"></i> Share
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="post">
+                        <img src="img3.png" alt="Post Image">
+                        <div class="post-content">
+                            <div class="art">
+                                <h3>Education</h3>
+                                <div class="three-dots-menu">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                <p>Tax Benefits for Investment under National Pension Scheme Launched by Government</p>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="author">
+                                <img src="img22.png" alt="Author"
+                                    style="width: 30px; height: 30px; border-radius: 50%;">
+                                <a href="#">Sarah West</a>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i> 1.4k views
+                            </div>
+                            <div class="share">
+                                <i class="fas fa-share-alt"></i> Share
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img src="img4.png" alt="Post Image">
+                        <div class="post-content">
+                            <h3>Meetup</h3>
+                            <div class="three">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p>Finance & Investment Elite Social Mixer @Lujiazui</p>
+                        </div>
+                        <div class="post-footer">
+                            <div class="author">
+                                <img src="img33.png" alt="Author"
+                                    style="width: 30px; height: 30px; border-radius: 50%;">
+                                <a href="#">Ronal Jones</a>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i> 1.4k views
+                            </div>/
+                            <div class="share">
+                                <i class="fas fa-share-alt"></i> Share
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img src="img44.jpg" alt="Post Image">
+                        <div class="post-content">
+                            <h3>Job</h3>
+                            <p>Software Developer</p>
+                        </div>
+                        <div class="post-footer">
+                            <div class="author">
+                                <img src="img55.png" alt="Author"
+                                    style="width: 30px; height: 30px; border-radius: 50%;">
+                                <a href="#">Joseph Gray</a>
+                            </div>
+                            <div class="views">
+                                <i class="fas fa-eye"></i> 1.4k views
+                            </div>
+                            <div class="share">
+                                <i class="fas fa-share-alt"></i> Share
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Sidebar Section -->
+                <div class="sidebar">
+                    <div class="location-section">
+                        <div class="location-input">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="Enter your location" id="location-input">
+                            <i class="fas fa-times clear-icon"></i>
+                        </div>
+                        <div class="location-description">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Your location will help us serve better and extend a personalised experience.</span>
+                        </div>
+                    </div>
+
+                    <div class="recommended-groups">
+                        <h4><i class="fas fa-thumbs-up"></i> Recommended Groups</h4>
+                        <div class="group">
+                            <img src="img111.png" alt="Leisure">
+                            <span>Leisure</span>
+                            <button class="follow-button">Follow</button>
+                        </div>
+                        <div class="group hidden">
+                            <img src="img222.png" alt="Activism">
+                            <span>Activism</span>
+                            <button class="follow-button">Follow</button>
+                        </div>
+                        <div class="group hidden">
+                            <img src="img333.png" alt="MBA">
+                            <span>MBA</span>
+                            <button class="follow-button">Follow</button>
+                        </div>
+                        <div class="group hidden">
+                            <img src="img444.png" alt="Philosophy">
+                            <span>Philosophy</span>
+                            <button class="follow-button">Follow</button>
+                        </div>
+                        <a href="#" class="see-more">See More...</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,697 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* align-items: center; */
+    /* width: 1500px; */
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* border-bottom: 1px solid #ccc; */
+    /* padding: 10px 20px; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 1707px;
+    height: 80px;
+    /* width: 1440px;
+height: 72px;
+gap: 0px;
+opacity: 0px; */
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    /* width: 30px;
+    height: 30px;
+    margin-right: 10px; */
+    width: 162.57px;
+height: 24px;
+/* margin-top: 24px; */
+margin-left: 72px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar .search-box {
+    /* flex: 1; */
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    width: 360px;
+    height: 42px;
+    /* position: relative; */
+    align-items: center;
+    
+/* margin-top: 28px;  */
+/* margin-left: 590px; */
+gap: 0px;
+opacity: 0px;
+
+}
+
+/* .navbar .search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+} */
+
+/* .navbar .search-box input[type="text"] {
+    padding: 5px 5px 5px 30px; /* Add padding for the icon */
+    /* border-radius: 5px;
+    border: 1px solid #6b1d1d; */
+/* } */ 
+
+ 
+
+.navbar .search-box input[type="text"] {
+    /* width: 60%; */
+    padding: 5px 5px 5px 30px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 360px;
+height: 42px;
+    /* outline: none; */
+    /* font-size: 16px; */
+    /* padding-left: 20px; */
+}
+
+.navbar .search-box .search-icon {
+    position: absolute;
+    left: 10px;
+    color: #000000; /* Adjust the color as needed */
+} 
+
+
+.account-link a {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.account-link .create-account {
+    color: #2E2E2E;
+   
+}
+
+.account-link .free-text {
+    font-weight: bold;
+    color:#0056b3; /* Green color for "It's free!" */
+}
+
+.account-link a:hover .create-account {
+    text-decoration: underline;
+}
+
+.account-link a:hover .free-text {
+    text-decoration: underline;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} */
+
+.image-container {
+    position: relative; 
+    width: 100%;
+    max-width: 800px;
+    /* margin: auto; */
+}
+
+
+
+.image-container img {
+     /* width: 100%;
+    height: auto;
+    display: block;  */
+    width: 1700px;
+height: 440px;
+top: 72px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add background color with transparency */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ss .p{
+    font-family: IBM Plex Sans;
+font-size: 10px;
+line-height: 23.4px;
+text-align: left;
+}
+
+.overlay-text:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Change background on hover */
+}
+.section{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: white;
+    /* border-bottom: 1px solid #ccc; */
+    /* padding: 10px 20px; */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    width: 1707px;
+    height: 80px;
+
+}
+
+/* Styles for the tabs container */
+.tabs-container {
+max-width:  1440px;
+width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    position: relative;
+    /* width: 100%; */
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+}
+
+.tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.tab.active {
+    color: #000000;
+}
+
+.tab:hover {
+    color: #000000;
+}
+
+.tab-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+.tabs .tab.active ~ .tab-slider {
+    width: calc(100% / 5); /* Assuming there are 5 tabs */
+    left: calc(0% + (100% / 5 * var(--active-tab-index)));
+}
+
+.button-group{
+    display: flex;
+    gap: 10px;
+}
+
+.write-post, .join-group {
+    /* background-color: #007bff; */
+    /* color: white; */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.write-post{
+    background-color:#EDEEF0;
+    color: black;
+}
+.join-group{
+    background-color: #0056b3 ;
+}
+
+.write-post:hover, .join-group:hover {
+    background-color: #0056b3;
+}
+
+.write-post i, .join-group i {
+    margin-left: 5px;
+}
+
+
+
+.content {
+    /* width: 100%; */
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+/* align-items: center; */
+    width: 1440px;
+height: 2477px;
+/* margin-top: 540px; */
+/* margin-left: 2464px; */
+gap: 0px;
+opacity: 0px;
+margin: 0 auto;
+}
+
+.posts-section {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    position: relative;
+
+}
+
+.art{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.three-dots-menu {
+    font-size: 20px; /* Adjust the size as needed */
+    color: #333; /* Color of the dots */
+    cursor: pointer;
+    margin-left: 900px;
+}
+
+.three .fas{
+    font-size: 20px; /* Adjust the size as needed */
+    color: #333; /* Color of the dots */
+    cursor: pointer;
+    margin-left: 900px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.post-content p {
+    margin: 10px 0 0;
+    color: #666;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px ; */
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.post-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-footer .views {
+    color: #999;
+    margin-left: 700px;
+}
+
+/* New styling for the share section */
+.post-footer .share {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Adjust the size as needed */
+    color: #555; /* Color of the text and icon */
+    cursor: pointer;
+    margin-left: 15px; /* Space between the views and share sections */
+}
+
+/* Adjust the spacing between the icon and the text */
+.post-footer .share i {
+    margin-right: 4px;
+}
+
+
+/* Optional: Styling the icons to match in size */
+.post-footer .views i,
+.post-footer .share i {
+    font-size: 16px;
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    margin-right: 8px; /* Adjust space between image and name */
+}
+
+.views-share {
+    display: flex;
+    align-items: center;
+}
+.views,
+.share {
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Adjust space between views and share sections */
+}
+
+
+
+.sidebar {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.sidebar .user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .user-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .user-card .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .user-card .user-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sidebar .user-card .user-info p {
+    margin: 0;
+    color: #666;
+}
+
+.location-section {
+    margin: 20px 0;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.location-input i {
+    margin-right: 8px;
+}
+
+.location-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.clear-icon {
+    cursor: pointer;
+}
+
+.location-section {
+    margin: 20px 0;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.location-input i {
+    margin-right: 8px;
+}
+
+.location-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.clear-icon {
+    cursor: pointer;
+}
+
+.location-description {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.location-description i {
+    margin-right: 8px;
+}
+
+.recommended-groups {
+    margin-top: 20px;
+}
+
+.recommended-groups h4 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.recommended-groups h4 i {
+    margin-right: 8px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.group img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.group span {
+    flex-grow: 1;
+}
+
+.follow-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-button:hover {
+    background-color: #0056b3;
+}
+
+.see-more {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add this to your comp.css file */
+
+.join-group-btn {
+    background-color: #0056b3; /* Default color for Join Group */
+    color: white;
+}
+
+.leave-group-btn {
+    background-color: rgb(255, 255, 255); /* Color for Leave Group */
+    color: #989899;
+}
+
+/* Additional styles for the button */
+button.join-group-btn, button.leave-group-btn {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* For tablets and larger screens */
+@media (max-width: 1024px) {
+    .navbar {
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    .logo-img {
+        margin-left: 10px;
+    }
+
+    .navbar .search-box {
+        max-width: 300px;
+    }
+
+    .tabs-container {
+        padding: 10px;
+    }
+
+    .button-group {
+        gap: 5px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .posts-section {
+        padding-right: 10px;
+    }
+
+    .sidebar {
+        padding-left: 10px;
+    }
+
+    .sidebar .user-card img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar .search-box {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .account-link a {
+        margin-right: 10px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .posts-section, .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .post {
+        margin-bottom: 15px;
+    }
+
+    .sidebar .user-card {
+        margin-bottom: 15px;
+    }
+}
